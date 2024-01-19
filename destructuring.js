@@ -75,3 +75,14 @@ var obj = {
   const {a,b} = obj.number;
   //console.log({numbers:{a}, numbers:{b}} = numb);
   
+  //array swap 
+  /*var arr = [1, 2];
+var temp = arr[0];
+arr[0] = arr[1];
+arr[1] = temp;*/
+
+/* Write an ES2015 Version */
+let arr = [1,2];
+[arr[0], arr[1]] = [arr[1], arr[0]];
+
+const raceResults = ([firts,second, third, ...rest]) => ({first, second, third, rest});
